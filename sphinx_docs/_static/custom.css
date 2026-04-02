@@ -1,0 +1,12 @@
+
+/* Increase maximum content width */
+.wy-nav-content {
+    max-width: 1200px !important;   /* Or 1400px, 1600px, etc. */
+}
+
+/* Make tables scroll horizontally instead of breaking */
+.rst-content table.docutils {
+    width: 100% !important;
+    display: block;
+    overflow-x: auto;
+}
