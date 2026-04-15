@@ -28,18 +28,34 @@
 		
 ####################################################################################### */
 
-/*! 
-    \mainpage Welcome to the KAdanoff-BAym Non-Equilibrium COntour (Kaba-Neco) library!
+/*!
+    \mainpage Welcome to NESSi — Non-Equilibrium Systems Simulation
 
-    \section S1 Introduction
-    Some stuff to explain why you coded all this
+    \section S1 What is NESSi?
 
-    \section S2 Examples
-    Many examples of how the code can be used
+    \c NESSi is an open-source software package for the manipulation of nonequilibrium
+    Green's functions defined on the Kadanoff–Baym contour.
+    The Green's function method in its time-dependent formulation is a versatile framework
+    for solving interacting many-body problems out of equilibrium.
 
-    \section S3 How to cite
-    Please cite the following paper whenever you use parts of Kaba-Neco:
-    
+    \c NESSi provides classes representing the various types of Green's functions,
+    implements the basic operations on these functions, and allows one to solve the
+    corresponding equations of motion. The library is aimed at the study of transient
+    dynamics from an initial equilibrium state, induced by time-dependent model parameters.
+
+    Key features:
+    - Tools for constructing Feynman diagrams and solving equations of motion for
+      nonequilibrium Green's functions on the Kadanoff–Baym contour.
+    - High-order quadrature rules: for \f$N\f$ time slices, the error scales as
+      \f$\mathcal{O}(N^{-p})\f$ with \f$p\f$ up to 7.
+    - Efficient distributed-memory parallelization over reciprocal space for
+      large-scale calculations on extended systems.
+    - Memory-truncated time propagation and steady-state calculations (v2.0.0).
+
+    \section S2 Full Documentation
+
+    The full manual including background, usage examples, and API reference
+    is available online at: [link to be added]
 */
 
 

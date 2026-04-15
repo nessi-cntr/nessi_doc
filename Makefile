@@ -16,12 +16,17 @@ html: doxygen
 doxygen:
 	@$(DOXYGEN) $(DOXYFILE)
 
+# Open Doxygen HTML output in the browser
+doxygen-html: doxygen
+	@echo "Doxygen HTML output is in doc/html/index.html"
+	@open doc/html/index.html 2>/dev/null || xdg-open doc/html/index.html 2>/dev/null || true
+
 # Remove Sphinx build output and Doxygen XML
 clean:
 	@$(SPHINXBUILD) -M clean "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	rm -rf doc/xml doc/html
 
-.PHONY: help html doxygen clean Makefile
+.PHONY: help html doxygen doxygen-html clean Makefile
 
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

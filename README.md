@@ -58,9 +58,14 @@ Open `_build/html/index.html` in a browser to view the result.
 ### Other targets
 
 ```bash
-make doxygen   # run Doxygen only
-make clean     # remove all build artifacts (_build/ and doc/)
+make doxygen        # run Doxygen only (generates XML and HTML)
+make doxygen-html   # build and open the pure source-code documentation (classes, functions, etc.) in the browser
+make clean          # remove all build artifacts (_build/ and doc/)
 ```
+
+The `doxygen-html` target produces a standalone API reference generated directly
+from the C++ source, including all classes, functions, and their documentation.
+The output is written to `doc/html/index.html`.
 
 ## Directory structure
 
